@@ -6,7 +6,7 @@
 
 <p align="center">Live subtitles for whatever your Mac is playing.</p>
 
-<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.0.0">Download sAiity 2.0</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
+<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.0">Download sAiity 2.2</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
 
 <hr>
 
@@ -15,9 +15,10 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/02-subtitles.png" width="32%" alt="Caption settings">
-  <img src="screenshots/03-models.png" width="32%" alt="Local speech and translation models">
-  <img src="screenshots/04-library.png" width="32%" alt="Saved transcript library">
+  <img src="screenshots/02-subtitles.png" width="24%" alt="Caption settings">
+  <img src="screenshots/03-models.png" width="24%" alt="Local speech and translation models">
+  <img src="screenshots/04-library.png" width="24%" alt="Saved transcript library">
+  <img src="screenshots/05-dictation.png" width="24%" alt="Press-to-talk dictation settings">
 </p>
 
 ## What it is
@@ -38,8 +39,10 @@ Hy-MT2 translation specialist, or a supported local GGUF model.
 inside the app and export bilingual SRT, WebVTT, Markdown, or plain text.
 
 **Dictation is press-to-talk.** Hold the configured key, speak, and release.
-The result is inserted into the focused text field when possible and always
-kept on the clipboard.
+The app shows when it is ready, then inserts the result into the focused text
+field when possible and always keeps a copy on the clipboard. Dictation
+translation has its own opt-in switch and target language, separate from
+caption translation.
 
 ## Requirements
 
@@ -58,7 +61,7 @@ Read the full [privacy policy](https://enrzh.github.io/sAiity/privacy.html).
 
 ## Status
 
-sAiity 2.0 is released for macOS 26 and Apple Silicon. Windows is not a
+sAiity 2.2 is released for macOS 26 and Apple Silicon. Windows is not a
 supported release target.
 
 ## Source
