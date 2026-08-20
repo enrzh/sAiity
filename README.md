@@ -6,7 +6,7 @@
 
 <p align="center">Live subtitles for whatever your Mac is playing.</p>
 
-<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.1">Download sAiity 2.2.1</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
+<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.2">Download sAiity 2.2.2</a> · <a href="https://enrzh.github.io/sAiity/appcast.xml">Update feed</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
 
 <hr>
 
@@ -61,8 +61,18 @@ Read the full [privacy policy](https://enrzh.github.io/sAiity/privacy.html).
 
 ## Status
 
-sAiity 2.2 is released for macOS 26 and Apple Silicon. Windows is not a
+sAiity 2.2.2 is released for macOS 26 and Apple Silicon. Windows is not a
 supported release target.
+
+## Updates
+
+GitHub Releases is the canonical download location. Sparkle reads the signed
+[`appcast.xml`](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub
+Pages site, and the feed points to the matching ZIP in the GitHub Release.
+
+Publish the release assets before updating `appcast.xml`; the Pages deployment
+serves the repository root from `main`. The appcast is intentionally kept
+separate from the GitHub Release assets.
 
 ## Source
 
