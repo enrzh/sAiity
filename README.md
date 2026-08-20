@@ -6,7 +6,7 @@
 
 <p align="center">Live subtitles for whatever your Mac is playing.</p>
 
-<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.0">Download sAiity 2.2</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
+<p align="center"><a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.1">Download sAiity 2.2.1</a> · <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
 
 <hr>
 
