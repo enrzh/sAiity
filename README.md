@@ -33,7 +33,7 @@
 
 ## The product
 
-| | |
+| Capability | Description |
 | --- | --- |
 | **Captions** | Speech from your Mac's system audio becomes stable captions in a small, movable bubble. Recognition runs on the Mac. |
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
@@ -54,7 +54,7 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 
 ## Requirements and status
 
-| | |
+| Requirement | Details |
 | --- | --- |
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
