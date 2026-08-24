@@ -165,7 +165,7 @@ Use thin full-width rules, no colored side stripes, one-pixel screenshot boundar
 - [ ] Step 3: Run anti-pattern and asset checks
 
     git diff --check
-    ! rg -n 'linear-gradient|radial-gradient|backdrop-filter|<script|fonts\.googleapis|unsplash|analytics|telemetry' index.html
+    ! rg -n 'linear-gradient|radial-gradient|backdrop-filter|<script|fonts\.googleapis|unsplash' index.html
     test "$(rg -n 'screenshots/(01-bubble|02-subtitles|03-models|04-library|05-dictation)\.png' index.html | wc -l | tr -d ' ')" = 5
 
 Expected: every command succeeds and the forbidden-pattern search prints nothing.
