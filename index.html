@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>sAiity - Speech on the machine</title>
+  <meta name="description" content="Live captions, translation, transcripts, and press-to-talk dictation for macOS, processed on your Mac.">
+  <link rel="canonical" href="https://enrzh.github.io/sAiity/">
+  <meta name="theme-color" content="#f6f7f8">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      color-scheme: light;
+      --page: oklch(0.985 0.004 220);
+      --surface: oklch(0.965 0.008 220);
+      --ink: oklch(0.205 0.018 220);
+      --muted: oklch(0.46 0.018 220);
+      --line: oklch(0.86 0.014 220);
+      --accent: oklch(0.62 0.145 195);
+      --accent-ink: oklch(0.22 0.035 210);
+      --link: oklch(0.39 0.12 205);
+      --shell: min(1120px, calc(100% - 40px));
+      --serif: Iowan Old Style, Baskerville, Times New Roman, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --page: oklch(0.19 0.015 220);
+        --surface: oklch(0.235 0.018 220);
+        --ink: oklch(0.94 0.012 220);
+        --muted: oklch(0.74 0.018 220);
+        --line: oklch(0.38 0.018 220);
+        --accent: oklch(0.76 0.13 195);
+        --accent-ink: oklch(0.16 0.02 220);
+        --link: oklch(0.8 0.1 195);
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      min-width: 320px;
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 16px/1.6 var(--sans);
+      text-wrap: pretty;
+    }
+    img { max-width: 100%; height: auto; }
+    a { color: inherit; }
+    a:focus-visible, .button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+    h1, h2, h3, p, figure, dl, dd { margin-block-start: 0; }
+    h1, h2 { text-wrap: balance; }
+    .shell { width: var(--shell); margin-inline: auto; }
+
+    .skip-link {
+      position: absolute;
+      top: -48px;
+      left: 20px;
+      z-index: 2;
+      padding: 10px 14px;
+      background: var(--ink);
+      color: var(--page);
+    }
+    .skip-link:focus { top: 12px; }
+
+    .site-header { border-bottom: 1px solid var(--line); }
+    .header-inner, .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 18px;
+    }
+    .wordmark {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+    nav a, .site-footer a { text-decoration: none; }
+    nav a:hover, .site-footer a:hover, .text-link:hover { color: var(--link); }
+
+    .hero {
+      padding-block: clamp(72px, 12vw, 152px) clamp(64px, 9vw, 112px);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+      gap: clamp(40px, 9vw, 128px);
+      align-items: end;
+    }
+    .hero-copy { max-width: 760px; }
+    .eyebrow {
+      margin-bottom: 16px;
+      color: var(--accent-ink);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 10ch;
+      margin-bottom: 28px;
+      font: 400 clamp(3.2rem, 8vw, 6rem)/0.98 var(--serif);
+      letter-spacing: -0.035em;
+    }
+    .hero-lede {
+      max-width: 46ch;
+      margin-bottom: 32px;
+      color: var(--muted);
+      font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+      line-height: 1.35;
+    }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out;
+    }
+    .button-primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--accent-ink);
+    }
+    .button-primary:hover {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: var(--page);
+    }
+    .button-secondary:hover { border-color: var(--link); color: var(--link); }
+    .requirements { margin: 18px 0 0; color: var(--muted); font-size: 13px; }
+
+    .hero-rail {
+      margin: 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .hero-rail div {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-block: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-rail dt { color: var(--ink); font-weight: 700; }
+    .hero-rail dd { margin: 0; text-align: right; }
+
+    .proof, .capabilities, .release {
+      padding-block: clamp(72px, 10vw, 128px);
+      border-top: 1px solid var(--line);
+    }
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 0.8fr);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 48px;
+    }
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+    }
+    .section-heading p, .privacy-copy p, .release-copy p {
+      max-width: 54ch;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+    .hero-shot { margin: 0; }
+    .hero-shot img {
+      display: block;
+      width: 100%;
+      border-block: 1px solid var(--line);
+    }
+    figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .product-views {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .product-views figure { min-width: 0; margin: 0; }
+    .product-views img {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .product-views figcaption { color: var(--ink); font-weight: 700; }
+
+    .capability-list { border-top: 1px solid var(--line); }
+    .capability-list article {
+      display: grid;
+      grid-template-columns: minmax(150px, 0.45fr) minmax(0, 1fr);
+      gap: 32px;
+      padding-block: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .capability-list h3 { margin-bottom: 0; font-size: 18px; line-height: 1.2; }
+    .capability-list p { max-width: 58ch; margin-bottom: 0; color: var(--muted); }
+
+    .privacy-band { background: var(--surface); border-block: 1px solid var(--line); }
+    .privacy-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 0.8fr);
+      gap: 48px;
+      padding-block: clamp(72px, 10vw, 128px);
+    }
+    .privacy-copy, .release-copy { display: grid; gap: 24px; }
+    .privacy-copy a, .text-link { color: var(--link); font-weight: 700; }
+
+    .release {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 0.8fr);
+      gap: 48px;
+    }
+    .site-footer { border-top: 1px solid var(--line); color: var(--muted); }
+    .footer-inner { padding-block: 26px; font-size: 13px; }
+
+    @media (max-width: 760px) {
+      :root { --shell: min(100% - 32px, 1120px); }
+      .header-inner, .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+      nav { gap: 12px 18px; }
+      .hero-grid, .section-heading, .privacy-inner, .release {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .hero-rail { max-width: 360px; }
+      .section-heading { margin-bottom: 32px; }
+      .product-views {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 36px;
+      }
+      .capability-list article {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+    @media (max-width: 420px) {
+      .actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .product-views { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="/sAiity/" aria-label="sAiity home">sAiity</a>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="https://github.com/enrzh/sAiity">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">sAiity for Mac</p>
+          <h1 id="hero-title">Speech on the machine, not in the cloud.</h1>
+          <p class="hero-lede">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
+          <div class="actions">
+            <a class="button button-primary" href="https://github.com/enrzh/sAiity/releases/tag/v2.2.4">Download for Mac</a>
+            <a class="button button-secondary" href="https://github.com/enrzh/sAiity">View on GitHub</a>
+          </div>
+          <p class="requirements">macOS 26 or later <span aria-hidden="true">&middot;</span> Apple Silicon <span aria-hidden="true">&middot;</span> Windows not supported</p>
+        </div>
+        <dl class="hero-rail" aria-label="sAiity product facts">
+          <div><dt>Processing</dt><dd>On-device</dd></div>
+          <div><dt>Account</dt><dd>Not required</dd></div>
+          <div><dt>Platform</dt><dd>macOS / Apple Silicon</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="proof shell" aria-labelledby="proof-title">
+      <div class="section-heading">
+        <h2 id="proof-title">A quiet layer over the sound.</h2>
+        <p>Recognition and translation happen locally, then appear where you need them: in a small caption bubble, a saved transcript, or the field you are writing in.</p>
+      </div>
+      <figure class="hero-shot">
+        <img src="screenshots/01-bubble.png" width="615" height="133" alt="sAiity caption bubble showing original speech and its translation">
+        <figcaption>Live captions stay readable without taking over the screen.</figcaption>
+      </figure>
+      <div class="product-views">
+        <figure>
+          <img src="screenshots/02-subtitles.png" width="760" height="628" alt="sAiity caption settings for subtitle appearance and timing">
+          <figcaption>Captions</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/03-models.png" width="760" height="628" alt="sAiity local speech recognition and translation model settings">
+          <figcaption>Models</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/04-library.png" width="760" height="628" alt="sAiity saved transcript library with original and translated sessions">
+          <figcaption>Transcripts</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/05-dictation.png" width="760" height="628" alt="sAiity press-to-talk dictation settings">
+          <figcaption>Dictation</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="capabilities shell" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title">Four ways to keep speech useful.</h2>
+      </div>
+      <div class="capability-list">
+        <article>
+          <h3>Captions</h3>
+          <p>Speech from your Mac's system audio becomes stable captions in a small, movable bubble. Recognition runs on the Mac.</p>
+        </article>
+        <article>
+          <h3>Translation</h3>
+          <p>Add a second line in another language with a local translation model while keeping the original speech available.</p>
+        </article>
+        <article>
+          <h3>Dictation</h3>
+          <p>Hold a configurable key, speak, and release. The result goes into the focused field when possible and always remains on the clipboard.</p>
+        </article>
+        <article>
+          <h3>Transcripts</h3>
+          <p>Save original and translated sessions in the app, then read them later or export SRT, WebVTT, Markdown, or plain text.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="privacy-band" aria-labelledby="privacy-title">
+      <div class="shell privacy-inner">
+        <div>
+          <p class="eyebrow">Local by default</p>
+          <h2 id="privacy-title">Nothing leaves your Mac for daily use.</h2>
+        </div>
+        <div class="privacy-copy">
+          <p>There is no account, tracking, telemetry, or audio upload. Models run on-device after download. The captions microphone is optional; dictation opens it only while the press-to-talk key is held.</p>
+          <p><a href="privacy.html">Deutsche Datenschutzerkl&auml;rung</a><span aria-hidden="true"> &middot; </span><a href="en/privacy.html">English privacy policy</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="release shell" aria-labelledby="release-title">
+      <div>
+        <p class="eyebrow">Current release</p>
+        <h2 id="release-title">Ready when you are.</h2>
+      </div>
+      <div class="release-copy">
+        <p>GitHub Releases is the canonical download location. Sparkle checks the signed feed only when you enable updates.</p>
+        <p><a class="text-link" href="https://github.com/enrzh/sAiity/releases/tag/v2.2.4">Download the latest release</a><span aria-hidden="true"> &middot; </span><a class="text-link" href="appcast.xml">View the update feed</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>sAiity - live captions on the Mac</span>
+      <span><a href="https://aiity.de">aiity</a><span aria-hidden="true"> &middot; </span><a href="https://github.com/enrzh/sAiity">GitHub</a><span aria-hidden="true"> &middot; </span><a href="privacy.html">Privacy</a></span>
+    </div>
+  </footer>
+</body>
+</html>
