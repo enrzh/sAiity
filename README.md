@@ -9,7 +9,7 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.5">Download v2.2.5</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.2.6">Download v2.2.6</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -59,7 +59,7 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
 | **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.2.5 is the current signed release. Windows is not supported. |
+| **Release** | v2.2.6 is the current signed release. Windows is not supported. |
 
 ## Updates
 
