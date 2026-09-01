@@ -3,15 +3,15 @@
   <channel>
     <title>sAiity</title>
     <item>
-      <title>sAiity 2.3.0</title>
-      <pubDate>Tue, 01 Sep 2026 01:04:45 +0200</pubDate>
-      <sparkle:version>143</sparkle:version>
-      <sparkle:shortVersionString>2.3.0</sparkle:shortVersionString>
+      <title>sAiity 2.3.1</title>
+      <pubDate>Tue, 01 Sep 2026 16:06:14 +0200</pubDate>
+      <sparkle:version>144</sparkle:version>
+      <sparkle:shortVersionString>2.3.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.3.0/sAiity-2.3.0.zip"
-                 length="21779276"
+      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.3.1/sAiity-2.3.1.zip"
+                 length="21780174"
                  type="application/octet-stream"
-                 sparkle:edSignature="P3Q7mfW86/fuq8XymhGW+qazssSt5qSXEarFfiS8viMMPI1wlBLPIrKC4sojNLR8aUIf8KjEyLq8uxxo7YwvCQ=="/>
+                 sparkle:edSignature="aE1LpiFCXiRMOvGjgnh7ck2HRFBfbiZ8bguh+TQJZpe7hDLh7K5Kysqt9kcOfHMJtYLlYRzKFEEtYKFy8+1pBg=="/>
     </item>
   </channel>
 </rss>
