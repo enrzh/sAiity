@@ -9,7 +9,7 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.3">Download v2.3.3</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.7">Download v2.3.7</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -59,15 +59,16 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
 | **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.3.3 is the current signed release. Windows is not supported. |
+| **Release** | v2.3.7 is the current signed release. Windows is not supported. |
 
 ## Updates
 
 GitHub Releases is the canonical download location. Sparkle reads the signed [appcast.xml](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub Pages site, and the feed points to the matching ZIP in the GitHub Release.
 
-The current release improves language-preserving dictation cleanup, including
-long-tail languages, and passes source-language guidance into the local cleanup
-prompt. Cleanup never translates the dictated text automatically.
+The current release hardens subtitle-bubble and dictation translation, preserves
+mixed-language dictation, and keeps local translation models safe when the source
+and target language are already the same. Cleanup never translates dictated text
+automatically.
 
 Publish release assets before updating the feed. The feed is served from the main branch of this public repository.
 
