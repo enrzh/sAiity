@@ -3,31 +3,12 @@
   <channel>
     <title>sAiity</title>
     <item>
-      <title>sAiity 2.3.9</title>
-      <pubDate>Fri, 11 Sep 2026 00:46:41 +0200</pubDate>
-      <sparkle:version>157</sparkle:version>
-      <sparkle:shortVersionString>2.3.9</sparkle:shortVersionString>
+      <title>sAiity 2.4.0</title>
+      <pubDate>Fri, 11 Sep 2026 01:07:48 +0200</pubDate>
+      <sparkle:version>158</sparkle:version>
+      <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.3.9/sAiity-2.3.9.zip"
-                 length="23414848"
-                 type="application/octet-stream"
-                 sparkle:edSignature="MpGGZz5cbilpZJ4TT5PRsxpNHZeb8IxJD2Vorp8lqPORGgjbFFHtO9oEfLnO7eAYGa7giMbDrsIabZJpe9wXDg=="/>
-    </item>
-  </channel>
-</rss><?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>sAiity</title>
-    <item>
-      <title>sAiity 2.3.8</title>
-      <pubDate>Thu, 10 Sep 2026 23:38:58 +0200</pubDate>
-      <sparkle:version>156</sparkle:version>
-      <sparkle:shortVersionString>2.3.8</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.3.8/sAiity-2.3.8.zip"
-                 length="23412130"
-                 type="application/octet-stream"
-                 sparkle:edSignature="kHk/Jw4vlyS+0N2apoFOAXVnP1wqr6nT38UfW5V39fpBOGQAWLaGYJRbOdTEac9aFPtrOQeMpuhSDFqviPCRDA=="/>
+      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.4.0/sAiity-2.4.0.zip" length="23414816" type="application/octet-stream" sparkle:edSignature="l3rIJ0/mNOleMFoHEPrM84PQjCl6L2nvqsCjE3yDwvivpplbhsDVWzPgpD+iL4napuWzAhYc8zebMmnCFQjnAQ=="/>
     </item>
   </channel>
 </rss>
