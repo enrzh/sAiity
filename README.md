@@ -9,11 +9,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.4">Release notes v2.3.4</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.6">Release notes v2.3.6</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.4/sAiity-2.3.4.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.6/sAiity-2.3.6.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.4/sAiity-2.3.4.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.6/sAiity-2.3.6.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -63,15 +63,15 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
 | **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.3.4 is the current signed and notarized release. Windows is not supported. |
+| **Release** | v2.3.6 is the current signed and notarized release. Windows is not supported. |
 
 ## Updates
 
 GitHub Releases is the canonical download location. Sparkle reads the signed [appcast.xml](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub Pages site, and the feed points to the matching ZIP in the GitHub Release.
 
-Version 2.3.4 improves dictation responsiveness and cleanup, makes translation fallbacks more predictable, adds waveform feedback, and keeps subtitle history scrollable with transcript export.
+Version 2.3.6 makes Settings more minimal, stabilizes the subtitle bubble and dictation translation path, adds mixed-language dictation with waveform feedback, and improves cleanup while keeping subtitle history scrollable with transcript export.
 
-The DMG installer is notarized by Apple. DMG SHA-256: `2f64caec3fec3ea7470d30a588f08d18854994552fb31cc839926ddcec75ab15`. ZIP SHA-256: `c8e9972cff2c7d86f891747c4229c08c00da491a1eb88104aa86e6b37222e73c`.
+The DMG installer is notarized by Apple. DMG SHA-256: `a6077b72d00832d9be9d41dae605b50c74de7aaa088a60893f18903f49225d9f`. ZIP SHA-256: `bf70a03090884f5d35c8e1b98010aed66544a9fb6f23f833cd4e847e9e9158dc`.
 
 Publish release assets before updating the feed. The feed is served from the main branch of this public repository.
 
