@@ -3,6 +3,22 @@
   <channel>
     <title>sAiity</title>
     <item>
+      <title>sAiity 2.3.9</title>
+      <pubDate>Fri, 11 Sep 2026 00:46:41 +0200</pubDate>
+      <sparkle:version>157</sparkle:version>
+      <sparkle:shortVersionString>2.3.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/enrzh/sAiity/releases/download/v2.3.9/sAiity-2.3.9.zip"
+                 length="23414848"
+                 type="application/octet-stream"
+                 sparkle:edSignature="MpGGZz5cbilpZJ4TT5PRsxpNHZeb8IxJD2Vorp8lqPORGgjbFFHtO9oEfLnO7eAYGa7giMbDrsIabZJpe9wXDg=="/>
+    </item>
+  </channel>
+</rss><?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>sAiity</title>
+    <item>
       <title>sAiity 2.3.8</title>
       <pubDate>Thu, 10 Sep 2026 23:38:58 +0200</pubDate>
       <sparkle:version>156</sparkle:version>
