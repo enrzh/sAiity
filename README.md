@@ -9,7 +9,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.7">Download v2.3.7</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.7">Release notes v2.3.7</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.7/sAiity-2.3.7.dmg">Download DMG</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.7/sAiity-2.3.7.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -37,8 +41,8 @@
 | --- | --- |
 | **Captions** | Speech from your Mac's system audio becomes stable captions in a small, movable bubble. Recognition runs on the Mac. |
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
-| **Dictation** | Hold a configurable key, speak, and release. Local cleanup removes clear fillers and repetitions while preserving the spoken language; the result is inserted into the focused field when possible and also kept on the clipboard. |
-| **Transcripts** | Save sessions in the app with original and translated text together. Read them later or export SRT, WebVTT, Markdown, or plain text. |
+| **Dictation** | Hold a configurable key, speak, and release. Local cleanup removes clear fillers and repetitions while preserving the spoken language; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
+| **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
 
 ## If something needs the network
 
@@ -59,16 +63,18 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
 | **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.3.7 is the current signed release. Windows is not supported. |
+| **Release** | v2.3.7 is the current signed and notarized release. Windows is not supported. |
 
 ## Updates
 
 GitHub Releases is the canonical download location. Sparkle reads the signed [appcast.xml](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub Pages site, and the feed points to the matching ZIP in the GitHub Release.
 
-The current release hardens subtitle-bubble and dictation translation, preserves
-mixed-language dictation, and keeps local translation models safe when the source
-and target language are already the same. Cleanup never translates dictated text
-automatically.
+Version 2.3.7 hardens Settings, stabilizes the subtitle bubble and dictation
+translation path, preserves mixed-language dictation, and improves cleanup while
+keeping subtitle history scrollable with transcript export. Cleanup never
+translates dictated text automatically.
+
+The DMG installer is notarized by Apple. DMG SHA-256: `3542b4e51ac070e320475be2b49a02fa741487aaca5ac09084c85690304b0d39`. ZIP SHA-256: `708ce49a99012f4121ee07fe322267260141177613da06375de5289381638fa0`.
 
 Publish release assets before updating the feed. The feed is served from the main branch of this public repository.
 
