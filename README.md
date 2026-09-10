@@ -9,11 +9,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.7">Release notes v2.3.7</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.8">Release notes v2.3.8</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.7/sAiity-2.3.7.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.8/sAiity-2.3.8.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.7/sAiity-2.3.7.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.8/sAiity-2.3.8.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -63,18 +63,18 @@ Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or
 | **System** | macOS 26 or later on Apple Silicon. |
 | **Captions** | Screen Recording permission for system-audio capture. |
 | **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.3.7 is the current signed and notarized release. Windows is not supported. |
+| **Release** | v2.3.8 is the current signed and notarized release. Windows is not supported. |
 
 ## Updates
 
 GitHub Releases is the canonical download location. Sparkle reads the signed [appcast.xml](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub Pages site, and the feed points to the matching ZIP in the GitHub Release.
 
-Version 2.3.7 hardens Settings, stabilizes the subtitle bubble and dictation
-translation path, preserves mixed-language dictation, and improves cleanup while
-keeping subtitle history scrollable with transcript export. Cleanup never
-translates dictated text automatically.
+Version 2.3.8 keeps the newest subtitle at the bottom, saves bubble transcripts
+to the in-app library, removes unreliable Qwen cleanup downloads, and makes
+Gemma 3 1B the recommended cleanup model. Cleanup never translates dictated
+text automatically.
 
-The DMG installer is notarized by Apple. DMG SHA-256: `3542b4e51ac070e320475be2b49a02fa741487aaca5ac09084c85690304b0d39`. ZIP SHA-256: `708ce49a99012f4121ee07fe322267260141177613da06375de5289381638fa0`.
+The DMG installer is notarized by Apple. DMG SHA-256: `122e54e27c63c030734f1509a108c783bc8dc6ca51cc7d875cd9e664eff5bb46`. ZIP SHA-256: `8e230de2bc504a25ae0ba0728f2f48325cbdb5b5e4ad4b190c7f08709a767b7d`.
 
 Publish release assets before updating the feed. The feed is served from the main branch of this public repository.
 
