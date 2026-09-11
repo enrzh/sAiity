@@ -3,13 +3,21 @@
 </p>
 
 
+
+
 <h1 align="center">sAiity</h1>
+
+
 
 
 <p align="center"><strong>Speech on the machine, not in the cloud.</strong></p>
 
 
+
+
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
+
+
 
 
 <p align="center">
@@ -27,23 +35,15 @@
 </p>
 
 
+
+
 <hr>
 
 
-<p align="center">
-  <img src="screenshots/01-bubble.png" width="92%" alt="sAiity caption bubble showing original speech and translation">
-</p>
-
-
-<p align="center">
-  <img src="screenshots/02-subtitles.png" width="24%" alt="sAiity subtitle settings">
-  <img src="screenshots/03-models.png" width="24%" alt="sAiity local speech and translation models">
-  <img src="screenshots/04-library.png" width="24%" alt="sAiity saved transcript library">
-  <img src="screenshots/05-dictation.png" width="24%" alt="sAiity press-to-talk dictation settings">
-</p>
-
 
 ## The product
+
+
 
 
 | Capability | Description |
@@ -54,16 +54,11 @@
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
 
 
+
+
 ## If something needs the network
 
 
+
+
 Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
-
-
-## What we know about you
-
-
-<p><strong>Nothing.</strong></p>
-
-
-There is no account, tracking, telemetry, or audio upload. The microphone is opened for captions only when its explicit setting is enabled, and for dictation only while the press-to-talk key is held. Dictation cleanup is local and keeps the language that was spoken; translation remains a separate opt-in action. Saved transcripts stay on your Mac until you export or delete them.
