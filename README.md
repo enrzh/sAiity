@@ -2,18 +2,22 @@
   <img src="screenshots/icon.png" width="112" alt="sAiity app icon">
 </p>
 
+
 <h1 align="center">sAiity</h1>
+
 
 <p align="center"><strong>Speech on the machine, not in the cloud.</strong></p>
 
+
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
+
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.3.8">Release notes v2.3.8</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.4.0">Release notes v2.4.0</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.8/sAiity-2.3.8.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.0/sAiity-2.4.0.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.3.8/sAiity-2.3.8.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.0/sAiity-2.4.0.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -22,11 +26,14 @@
   <a href="https://aiity.de">aiity</a>
 </p>
 
+
 <hr>
+
 
 <p align="center">
   <img src="screenshots/01-bubble.png" width="92%" alt="sAiity caption bubble showing original speech and translation">
 </p>
+
 
 <p align="center">
   <img src="screenshots/02-subtitles.png" width="24%" alt="sAiity subtitle settings">
@@ -35,7 +42,9 @@
   <img src="screenshots/05-dictation.png" width="24%" alt="sAiity press-to-talk dictation settings">
 </p>
 
+
 ## The product
+
 
 | Capability | Description |
 | --- | --- |
@@ -44,44 +53,17 @@
 | **Dictation** | Hold a configurable key, speak, and release. Local cleanup removes clear fillers and repetitions while preserving the spoken language; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
 
+
 ## If something needs the network
+
 
 Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
 
+
 ## What we know about you
+
 
 <p><strong>Nothing.</strong></p>
 
+
 There is no account, tracking, telemetry, or audio upload. The microphone is opened for captions only when its explicit setting is enabled, and for dictation only while the press-to-talk key is held. Dictation cleanup is local and keeps the language that was spoken; translation remains a separate opt-in action. Saved transcripts stay on your Mac until you export or delete them.
-
-Read the [German privacy policy](https://enrzh.github.io/sAiity/privacy.html) or [English privacy policy](https://enrzh.github.io/sAiity/en/privacy.html).
-
-## Requirements and status
-
-| Requirement | Details |
-| --- | --- |
-| **System** | macOS 26 or later on Apple Silicon. |
-| **Captions** | Screen Recording permission for system-audio capture. |
-| **Dictation** | Microphone permission while the push-to-talk key is held. Accessibility permission is needed for insertion into another app; clipboard fallback works without it. |
-| **Release** | v2.3.8 is the current signed and notarized release. Windows is not supported. |
-
-## Updates
-
-GitHub Releases is the canonical download location. Sparkle reads the signed [appcast.xml](https://enrzh.github.io/sAiity/appcast.xml) from this GitHub Pages site, and the feed points to the matching ZIP in the GitHub Release.
-
-Version 2.3.8 keeps the newest subtitle at the bottom, saves bubble transcripts
-to the in-app library, removes unreliable Qwen cleanup downloads, and makes
-Gemma 3 1B the recommended cleanup model. Cleanup never translates dictated
-text automatically.
-
-The DMG installer is notarized by Apple. DMG SHA-256: `122e54e27c63c030734f1509a108c783bc8dc6ca51cc7d875cd9e664eff5bb46`. ZIP SHA-256: `8e230de2bc504a25ae0ba0728f2f48325cbdb5b5e4ad4b190c7f08709a767b7d`.
-
-Publish release assets before updating the feed. The feed is served from the main branch of this public repository.
-
-## Source
-
-This repository is the public product page and download surface. The implementation source is kept in a private repository. No source code or reuse license is provided here.
-
-<hr>
-
-<p align="center"><sub>Part of the <a href="https://aiity.de">aiity</a> family.</sub></p>
