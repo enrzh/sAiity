@@ -1,10 +1,3 @@
-<p align="center">
-  <img src="screenshots/icon.png" width="112" alt="sAiity app icon">
-</p>
-
-
-
-
 <h1 align="center">sAiity</h1>
 
 
@@ -21,11 +14,11 @@
 
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.4.0">Release notes v2.4.0</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.4.1">Release notes v2.4.1</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.0/sAiity-2.4.0.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.1/sAiity-2.4.1.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.0/sAiity-2.4.0.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.1/sAiity-2.4.1.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -62,3 +55,10 @@
 
 
 Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
+
+## What's new in 2.4.1
+
+- Faster dictation cleanup by skipping deterministic edits and keeping the selected local cleanup model warm for repeated dictations.
+- Safer cleanup and translation for mixed-language dictation, preserving per-region language metadata and never using the first detected language as the whole source.
+- Sequential ASR region processing with cancellation-safe native model lifetime handling.
+- Nemotron 2240 remains the recommended dictation engine after local latency and code-switching checks; Whisper base remains available as an explicit alternative.
