@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.4.5">Release notes v2.4.5</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.4.7">Release notes v2.4.7</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.5/sAiity-2.4.5.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.5/sAiity-2.4.7.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.5/sAiity-2.4.5.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.4.5/sAiity-2.4.7.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -33,10 +33,3 @@
 
 Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
 
-## What's new in 2.4.5
-
-- Added a dismissible About & Support sheet with a visible Done action and Escape-key dismissal.
-- Added version, privacy, and bundled third-party credits to the same support surface.
-- Added shared Dictation bubble surface styling controls for Glass, Clear, Solid, Liquid Glass, tint, and corner radius.
-- Kept caption typography and positioning controls on the Captions page while making Dictation settings more focused.
-- Verified 324 tests in 41 suites, plus Developer ID signing, Apple notarization, and the styled drag-to-Applications DMG.
