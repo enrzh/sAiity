@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.1">Release notes v2.5.1</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.2">Release notes v2.5.2</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.2/sAiity-2.5.2.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.2/sAiity-2.5.2.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -45,6 +45,21 @@
 - Removed the duplicate top-right Advanced settings action from Dictation and Captions.
 - Polished the remaining native disclosure with a slider icon, compact semibold typography, improved spacing, and localized labels.
 - Verified 374 tests in 48 suites, plus Developer ID signing, Apple notarization, and the styled drag-to-Applications DMG.
+
+## What's new in 2.5.2
+
+- Clearing the caption bubble now starts a fresh visible display row while the
+  recognition session continues, so new speech appears without restarting
+  captions and late translations cannot repaint the cleared row.
+- Captions show their listening state before translator warm-up completes and
+  choose between already-installed ASR tiers using caption-specific latency
+  measurements; dictation keeps its own adaptive history.
+- Verified 380 tests in 49 suites, Apple notarization, and the styled
+  drag-to-Applications DMG.
+
+DMG SHA-256: `b4725e508caa0307d79c938af063ca955307ee2384f78a5ed05539499f6c9141`
+
+ZIP SHA-256: `5752171bb5bdd82c1b52356b114e73a0914edd96f401b595e05bcce70081988f`
 
 ## If something needs the network
 
