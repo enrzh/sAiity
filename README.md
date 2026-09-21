@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.1">Release notes v2.5.1</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.3">Release notes v2.5.3</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.3/sAiity-2.5.3.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.3/sAiity-2.5.3.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -28,6 +28,16 @@
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+
+## What's new in 2.5.3
+
+- Adaptive speech activity detection closes live captions at natural pauses and
+  distinguishes healthy silence from a stalled capture stream.
+- Stable cumulative ASR reconciliation reduces duplicated or missing words
+  around pauses and recognizer revisions.
+- Bounded ASR processing, sample-clock timestamps, backlog diagnostics, and
+  generation-safe translation keep captions responsive during long sessions.
+- Script-aware joining preserves readable Latin spacing and spaceless scripts.
 
 ## What's new in 2.5.0
 
