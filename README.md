@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.0">Release notes v2.5.0</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.1">Release notes v2.5.1</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.0/sAiity-2.5.0.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.0/sAiity-2.5.0.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.1/sAiity-2.5.1.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -39,6 +39,12 @@
   normalising it to the first detected language.
 - Cancellation, model readiness, and release timing are surfaced more clearly
   for a more predictable local workflow.
+
+## What's new in 2.5.1
+
+- Removed the duplicate top-right Advanced settings action from Dictation and Captions.
+- Polished the remaining native disclosure with a slider icon, compact semibold typography, improved spacing, and localized labels.
+- Verified 374 tests in 48 suites, plus Developer ID signing, Apple notarization, and the styled drag-to-Applications DMG.
 
 ## If something needs the network
 
