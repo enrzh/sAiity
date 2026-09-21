@@ -56,6 +56,21 @@
 - Polished the remaining native disclosure with a slider icon, compact semibold typography, improved spacing, and localized labels.
 - Verified 374 tests in 48 suites, plus Developer ID signing, Apple notarization, and the styled drag-to-Applications DMG.
 
+## What's new in 2.5.2
+
+- Clearing the caption bubble now starts a fresh visible display row while the
+  recognition session continues, so new speech appears without restarting
+  captions and late translations cannot repaint the cleared row.
+- Captions show their listening state before translator warm-up completes and
+  choose between already-installed ASR tiers using caption-specific latency
+  measurements; dictation keeps its own adaptive history.
+- Verified 380 tests in 49 suites, Apple notarization, and the styled
+  drag-to-Applications DMG.
+
+DMG SHA-256: `b4725e508caa0307d79c938af063ca955307ee2384f78a5ed05539499f6c9141`
+
+ZIP SHA-256: `5752171bb5bdd82c1b52356b114e73a0914edd96f401b595e05bcce70081988f`
+
 ## If something needs the network
 
 Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
