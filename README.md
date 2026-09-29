@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.5.5">Release notes v2.5.5</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.0">Release notes v2.6.0</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.5/sAiity-2.5.5.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.0/sAiity-2.6.0.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.5.5/sAiity-2.5.5.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.0/sAiity-2.6.0.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -29,7 +29,7 @@
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
 
-## What's new in 2.5.5
+## What's new in 2.6.0  - Hy-MT2 is available as an optional CPU-based translation engine for its 37 supported languages, with automatic fallback to MADLAD. - Translation failures and model declines are handled separately; real failures are logged and repeated failures safely retire the broken engine. - Press-to-talk now defaults to ⌥⌘Space, requires a real key chord, and is off on fresh installs while preserving existing users' choices. - Subtitle export cues stay readable at 17 characters per second without overlapping later speech; dictation cleanup and caption language analysis are faster. - Long dictations explain the recording limit, and fixes cover model cleanup, transcript-search performance, caption cue timing, and hotkey permission retries. - Verified 547 tests across 69 suites; the signed ZIP and styled DMG are notarized and stapled.  DMG SHA-256: aab2fff596f559cd00a2a1fb9f09c19bafac17c867df2cc4d45f50d974ca3d71  ZIP SHA-256: f4dae16f6fcc1f8f9b6b4fd843669b365f83b595458ce6cd38e2d5d34192752d  ## What's new in 2.5.5
 
 - Reorganized caption, dictation, model, and transcript settings into clearer task-focused pages.
 - Improved model readiness and download-state reporting, with safer model inventory refresh and interrupted-download cleanup.
