@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.2">Release notes v2.6.2</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.3">Release notes v2.6.3</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.2/sAiity-2.6.2.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.3/sAiity-2.6.3.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.2/sAiity-2.6.2.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.3/sAiity-2.6.3.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -28,6 +28,21 @@
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+
+## What's new in 2.6.3
+
+- Automatic insertion requires the press-time app and accessibility field to stay
+  focused; otherwise the result is copied.
+- Clipboard write failures keep the complete result in a persistent bubble whose
+  action is **Retry Copy**; retry copies the retained text without pasting.
+- Caption cold/warm timing and release-quality evidence fingerprints are tighter;
+  setup restores the persisted automatic-update preference.
+- Verified 604 tests across 76 suites; signed ZIP and styled DMG are notarized
+  and stapled.
+
+DMG SHA-256: 6186afb35c409af2e476e56bf78e6b6fdbbd9b96e3ca7a9abed29489432bd785
+
+ZIP SHA-256: 5a2d5fd5845b71dd7cb330fe0be3fe4cac791643749436d83475898f2268f8ea
 
 ## What's new in 2.6.2
 
