@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.1">Release notes v2.6.1</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.2">Release notes v2.6.2</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.1/sAiity-2.6.1.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.2/sAiity-2.6.2.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.1/sAiity-2.6.1.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.2/sAiity-2.6.2.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -28,6 +28,21 @@
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+
+## What's new in 2.6.2
+
+- Failed caption pumps become terminal instead of silent; Qwen keeps a fixed PCM
+  bound through silence; cleanup/translation share one generation budget with a
+  real deadline.
+- Speaker labels ride confirmed audio only; translation output is validated the
+  same way on every engine, including mixed-language preservation.
+- The release script gates notarization on a clean-source quality matrix.
+- Verified 590 tests across 75 suites; signed ZIP and styled DMG are notarized
+  and stapled.
+
+DMG SHA-256: c886d4069b004b09fc3ff0ec4df27185ba0c576674ccc0856cad9e84d8a0bc7a
+
+ZIP SHA-256: ca89d4778cc2c735b38ac683704b1ebceb0e852057326bcb7e425388f35dc873
 
 ## What's new in 2.6.1
 
