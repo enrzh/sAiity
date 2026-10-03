@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.3">Release notes v2.6.3</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.4">Release notes v2.6.4</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.3/sAiity-2.6.3.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.4/sAiity-2.6.4.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.3/sAiity-2.6.3.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.4/sAiity-2.6.4.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -28,6 +28,20 @@
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+
+## What's new in 2.6.4
+
+- Nemotron captions offer **Realtime** (1.12 s) or **Balanced** (2.24 s) subtitle timing, with a download control when the selected model is missing.
+- **Translation timing → Realtime** translates interim words as the sentence grows. Requests coalesce, and only the final sentence translation is saved.
+- Interim translation updates less often in Low Power Mode, under thermal or memory pressure, or after sustained slow decoding.
+- After cleanup, translation, or an approved correction, **Copy Original** copies the recognition text without pasting it.
+- **Names and terms** and explicit whole-phrase **Corrections** live in one shared local dictionary. Nothing is learned automatically.
+- Scrolling up in the caption bubble pauses follow. **Jump to latest**, or scrolling back to the bottom, resumes it.
+- Verified 619 tests across 77 suites; signed ZIP and styled DMG are notarized and stapled.
+
+DMG SHA-256: ef3e393f2f2b67c3c2443fb6a3332c377fa85f110e67c39c7f6cb20d9c8a8e3e
+
+ZIP SHA-256: fa8db3780edb4cd8665c1a61208322efba1c12ddd98d3f3095e3b3e9f3dfd62b
 
 ## What's new in 2.6.3
 
