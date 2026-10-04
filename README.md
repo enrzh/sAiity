@@ -5,11 +5,11 @@
 <p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
 
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.4">Release notes v2.6.4</a>
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.5">Release notes v2.6.5</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.4/sAiity-2.6.4.dmg">Download DMG</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg">Download DMG</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.4/sAiity-2.6.4.zip">Download ZIP</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.zip">Download ZIP</a>
   &nbsp;&middot;&nbsp;
   <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
   &nbsp;&middot;&nbsp;
@@ -28,6 +28,18 @@
 | **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
 | **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
 | **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+
+## What's new in 2.6.5
+
+- On the Transcripts page, **Summarize** writes a local recap, decisions, and action items for one saved session.
+- It uses the Gemma cleanup model already installed for dictation. It does not download a model, and it does not run while captions or dictation are using that model.
+- Spoken lines stay unchanged. SRT and WebVTT remain the words that were said. Markdown export prints the summary once, above the transcript.
+- A long session keeps the latest portion that fits and says how many earlier lines were left out.
+- Verified 628 tests across 79 suites; signed ZIP and styled DMG are notarized and stapled.
+
+DMG SHA-256: 99fb2557d24de19bd602ce3f5206519e058dfa9a57adca131a28d2d93573e334
+
+ZIP SHA-256: a7b79d3b5278f4d2a84ea03410d07f8b212c0c0bc2e8674442d9f287f2446cc0
 
 ## What's new in 2.6.4
 
