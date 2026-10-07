@@ -3,9 +3,9 @@
 <h1 align="center">sAiity</h1>
 <p align="center"><strong>Read what you hear. Keep what matters.</strong><br>Live captions, translation, dictation and transcripts. On your Mac.</p>
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg">Download for Mac</a> ·
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.dmg">Download for Mac</a> ·
   <a href="https://enrzh.github.io/sAiity/">Explore the app</a> ·
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.5">Release notes</a> ·
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.6">Release notes</a> ·
   <a href="https://enrzh.github.io/sAiity/en/privacy.html">Privacy</a>
 </p>
 
@@ -34,13 +34,13 @@
   <img src="screenshots/summary.png" width="340" alt="An example transcript with a local recap, decisions and action items">
 </p>
 
-Freshly captured on **October 7, 2026**, from the **2.6.5 release UI** using
+Freshly captured on **October 7, 2026**, from the **2.6.6 release UI** using
 synthetic caption and transcript text. See [image provenance](screenshots/README.md).
 
 ## Install
 
-1. [Download the signed, notarized DMG](https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg)
-   and move sAiity to Applications. [A ZIP is also available](https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.zip).
+1. [Download the signed, notarized DMG](https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.dmg)
+   and move sAiity to Applications. [A ZIP is also available](https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.zip).
 2. Choose captions, dictation or both. Setup walks you through local model
    downloads and the permissions for your chosen features.
 3. For captions, macOS Screen Recording permission gates system audio. Dictation
@@ -62,21 +62,22 @@ only while you hold the shortcut. Sparkle update checks are opt-in.
 [English policy](https://enrzh.github.io/sAiity/en/privacy.html) ·
 [Datenschutzerklärung](https://enrzh.github.io/sAiity/privacy.html)
 
-## Current release: 2.6.5
+## Current release: 2.6.6
 
-Local transcript summaries add a recap, decisions and action items using the
-Gemma cleanup model already installed for dictation. Summaries can miss or
-invent details; long sessions may omit earlier lines. Original spoken lines
-and SRT/WebVTT exports stay unchanged. Markdown includes the summary once.
+The transcript reader is resizable and hosts **Summarize**, **Summarize Again**,
+and **Remove Summary**. Session rows keep one secondary-action menu. Summaries
+share busy-state ownership with retranslation and refuse changed input before
+publishing. They still use the installed Gemma cleanup model and can miss or
+invent details; spoken lines and SRT/WebVTT stay unchanged.
 
-[Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.6.5) ·
+[Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.6.6) ·
 [All releases](https://github.com/enrzh/sAiity/releases) ·
 [Signed Sparkle feed](https://enrzh.github.io/sAiity/appcast.xml)
 
 | Artifact | SHA-256 |
 | --- | --- |
-| DMG | `99fb2557d24de19bd602ce3f5206519e058dfa9a57adca131a28d2d93573e334` |
-| ZIP | `a7b79d3b5278f4d2a84ea03410d07f8b212c0c0bc2e8674442d9f287f2446cc0` |
+| DMG | `c3928bbe3092d18f69e0014192dca0d9a472335cf07a05bc84294e4e42dbb5f6` |
+| ZIP | `00db2d397d19156d3b84a2e8299f65e52ba64f166f7381944c6b97463f1cdcc6` |
 
 ## About this repository
 
