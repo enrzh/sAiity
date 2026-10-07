@@ -1,180 +1,93 @@
-# sAiity
+<p align="center"><img src="screenshots/icon.png" width="100" alt="sAiity app icon"></p>
 
-<p align="center"><strong>Speech on the machine, not in the cloud.</strong></p>
-
-<p align="center">Live captions, translation, transcripts, and press-to-talk dictation for macOS.</p>
-
+<h1 align="center">sAiity</h1>
+<p align="center"><strong>Read what you hear. Keep what matters.</strong><br>Live captions, translation, dictation and transcripts. On your Mac.</p>
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.5">Release notes v2.6.5</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg">Download DMG</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.zip">Download ZIP</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://enrzh.github.io/sAiity/appcast.xml">Sparkle update feed</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://enrzh.github.io/sAiity/privacy.html">Privacy</a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://aiity.de">aiity</a>
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg">Download for Mac</a> ·
+  <a href="https://enrzh.github.io/sAiity/">Explore the app</a> ·
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.5">Release notes</a> ·
+  <a href="https://enrzh.github.io/sAiity/en/privacy.html">Privacy</a>
 </p>
 
-<hr>
+<p align="center"><img src="screenshots/captions.png" width="860" alt="Fresh capture of the native Captions window, with recognition and translation controls"></p>
+<p align="center"><img src="screenshots/bubble.png" width="620" alt="A caption bubble with English example text and its German translation"></p>
 
-## The product
+**macOS 26 or later · Apple Silicon · No account or API key.**
 
-| Capability | Description |
+## From listening to doing
+
+- **Follow the conversation.** System audio becomes captions in a movable
+  bubble. Nemotron offers Realtime or Balanced subtitle timing; Qwen is an
+  optional pause-based alternative.
+- **Keep both languages.** Local translation sits below the original. Choose
+  complete sentences or realtime previews as the sentence grows.
+- **Speak. Release. Done.** Hold your dictation shortcut, speak and release.
+  The result is inserted into the field you started in when possible, and stays
+  on the clipboard. Captions and dictation have independent model and language
+  choices. A local dictionary protects names and stores explicit corrections.
+- **Take the words with you.** Save bilingual transcripts, search sessions,
+  and export SRT, WebVTT, Markdown or plain text. Add a local summary to revisit
+  the essentials without changing the original spoken lines.
+
+<p align="center">
+  <img src="screenshots/dictation.png" width="440" alt="Dictation settings with a shortcut, recognition profile and translation choices">
+  <img src="screenshots/summary.png" width="340" alt="An example transcript with a local recap, decisions and action items">
+</p>
+
+Freshly captured on **October 7, 2026**, from the **2.6.5 release UI** using
+synthetic caption and transcript text. See [image provenance](screenshots/README.md).
+
+## Install
+
+1. [Download the signed, notarized DMG](https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.dmg)
+   and move sAiity to Applications. [A ZIP is also available](https://github.com/enrzh/sAiity/releases/download/v2.6.5/sAiity-2.6.5.zip).
+2. Choose captions, dictation or both. Setup walks you through local model
+   downloads and the permissions for your chosen features.
+3. For captions, macOS Screen Recording permission gates system audio. Dictation
+   uses the microphone; Accessibility permits insertion into another app.
+
+Models are downloaded on first use, not bundled in the app. Speed and storage
+requirements depend on the models and your Mac. Intel Macs and Windows are not
+supported releases.
+
+## Privacy
+
+Audio, recognition, translation and transcripts stay on your Mac. No audio
+uploads, account, analytics or API key. Internet access is needed for model
+downloads and optional update checks.
+
+The caption microphone mixer is off by default. Dictation uses the microphone
+only while you hold the shortcut. Sparkle update checks are opt-in.
+
+[English policy](https://enrzh.github.io/sAiity/en/privacy.html) ·
+[Datenschutzerklärung](https://enrzh.github.io/sAiity/privacy.html)
+
+## Current release: 2.6.5
+
+Local transcript summaries add a recap, decisions and action items using the
+Gemma cleanup model already installed for dictation. Summaries can miss or
+invent details; long sessions may omit earlier lines. Original spoken lines
+and SRT/WebVTT exports stay unchanged. Markdown includes the summary once.
+
+[Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.6.5) ·
+[All releases](https://github.com/enrzh/sAiity/releases) ·
+[Signed Sparkle feed](https://enrzh.github.io/sAiity/appcast.xml)
+
+| Artifact | SHA-256 |
 | --- | --- |
-| **Captions** | Speech from your Mac's system audio becomes stable captions in a small, movable bubble. Recognition runs on the Mac. |
-| **Translation** | Add a second line in another language with a local translation model. Original speech remains available. |
-| **Dictation** | Hold a configurable key, speak, and release. Silence-aware regions preserve natural language switches, while local cleanup removes clear fillers and repetitions; waveform feedback keeps the active dictation state visible; the result is inserted into the focused field when possible and also kept on the clipboard. |
-| **Transcripts** | Save sessions in the app with original and translated text together. Read them later, scroll through longer subtitle history, or export SRT, WebVTT, Markdown, or plain text. |
+| DMG | `99fb2557d24de19bd602ce3f5206519e058dfa9a57adca131a28d2d93573e334` |
+| ZIP | `a7b79d3b5278f4d2a84ea03410d07f8b212c0c0bc2e8674442d9f287f2446cc0` |
 
-## What's new in 2.6.5
+## About this repository
 
-- On the Transcripts page, **Summarize** writes a local recap, decisions, and action items for one saved session.
-- It uses the Gemma cleanup model already installed for dictation. It does not download a model, and it does not run while captions or dictation are using that model.
-- Spoken lines stay unchanged. SRT and WebVTT remain the words that were said. Markdown export prints the summary once, above the transcript.
-- A long session keeps the latest portion that fits and says how many earlier lines were left out.
-- Verified 628 tests across 79 suites; signed ZIP and styled DMG are notarized and stapled.
+This repository holds public release assets, the website and privacy policies.
+The application source is maintained separately. This is not an open-source
+distribution of the app.
 
-DMG SHA-256: 99fb2557d24de19bd602ce3f5206519e058dfa9a57adca131a28d2d93573e334
+GitHub Pages serves plain HTML and CSS from the root of `main`. No framework,
+build step, tracking scripts or external fonts. Preview locally with
+`python3 -m http.server 8080` and open it using ego-browser. Keep versioned
+download links aligned with the published release; publish release assets
+before updating the signed feed.
 
-ZIP SHA-256: a7b79d3b5278f4d2a84ea03410d07f8b212c0c0bc2e8674442d9f287f2446cc0
-
-## What's new in 2.6.4
-
-- Nemotron captions offer **Realtime** (1.12 s) or **Balanced** (2.24 s) subtitle timing, with a download control when the selected model is missing.
-- **Translation timing → Realtime** translates interim words as the sentence grows. Requests coalesce, and only the final sentence translation is saved.
-- Interim translation updates less often in Low Power Mode, under thermal or memory pressure, or after sustained slow decoding.
-- After cleanup, translation, or an approved correction, **Copy Original** copies the recognition text without pasting it.
-- **Names and terms** and explicit whole-phrase **Corrections** live in one shared local dictionary. Nothing is learned automatically.
-- Scrolling up in the caption bubble pauses follow. **Jump to latest**, or scrolling back to the bottom, resumes it.
-- Verified 619 tests across 77 suites; signed ZIP and styled DMG are notarized and stapled.
-
-DMG SHA-256: ef3e393f2f2b67c3c2443fb6a3332c377fa85f110e67c39c7f6cb20d9c8a8e3e
-
-ZIP SHA-256: fa8db3780edb4cd8665c1a61208322efba1c12ddd98d3f3095e3b3e9f3dfd62b
-
-## What's new in 2.6.3
-
-- Automatic insertion requires the press-time app and accessibility field to stay
-  focused; otherwise the result is copied.
-- Clipboard write failures keep the complete result in a persistent bubble whose
-  action is **Retry Copy**; retry copies the retained text without pasting.
-- Caption cold/warm timing and release-quality evidence fingerprints are tighter;
-  setup restores the persisted automatic-update preference.
-- Verified 604 tests across 76 suites; signed ZIP and styled DMG are notarized
-  and stapled.
-
-DMG SHA-256: 6186afb35c409af2e476e56bf78e6b6fdbbd9b96e3ca7a9abed29489432bd785
-
-ZIP SHA-256: 5a2d5fd5845b71dd7cb330fe0be3fe4cac791643749436d83475898f2268f8ea
-
-## What's new in 2.6.2
-
-- Failed caption pumps become terminal instead of silent; Qwen keeps a fixed PCM
-  bound through silence; cleanup/translation share one generation budget with a
-  real deadline.
-- Speaker labels ride confirmed audio only; translation output is validated the
-  same way on every engine, including mixed-language preservation.
-- The release script gates notarization on a clean-source quality matrix.
-- Verified 590 tests across 75 suites; signed ZIP and styled DMG are notarized
-  and stapled.
-
-DMG SHA-256: c886d4069b004b09fc3ff0ec4df27185ba0c576674ccc0856cad9e84d8a0bc7a
-
-ZIP SHA-256: ca89d4778cc2c735b38ac683704b1ebceb0e852057326bcb7e425388f35dc873
-
-## What's new in 2.6.1
-
-- Qwen3-ASR is a selectable caption engine alongside Nemotron; the language row
-  now matches what the active engine can recognise.
-- Dictation can show realtime text while you speak on the Streaming path, with
-  an optional preference that keeps the live draft on even with cleanup or
-  translation.
-- Cleanup is a model selector with an explicit Off; dictation and translation
-  engines sit in Quick controls beside the choices they belong to; Captions can
-  start from its own pane.
-- The app icon is the Dictus voice mark, rebuilt from a checked-in Icon Composer
-  source; settings row buttons no longer all default to glass.
-- The ship DMG keeps its volume icon after Finder layout.
-- Signed ZIP and styled DMG are notarized and stapled.
-
-DMG SHA-256: be5e2667c867d063a4473150ebb1f822095535f420fbfb60dd264bf8e489b5c2
-
-ZIP SHA-256: 9c2b6cec68488ac3f9a3ea41414df5f7c7a5e830cc2a2691ac2a502cff9cf6dc
-
-## What's new in 2.6.0
-
-- Hy-MT2 is available as an optional CPU-based translation engine for its 37
-  supported languages, with automatic fallback to MADLAD.
-- Translation failures and model declines are handled separately; real failures
-  are logged and repeated failures safely retire the broken engine.
-- Press-to-talk now defaults to ⌥⌘Space, requires a real key chord, and is off
-  on fresh installs while preserving existing users' choices.
-- Subtitle export cues stay readable at 17 characters per second without
-  overlapping later speech; dictation cleanup and caption language analysis are
-  faster.
-- Long dictations explain the recording limit, and fixes cover model cleanup,
-  transcript-search performance, caption cue timing, and hotkey permission
-  retries.
-- Verified 547 tests across 69 suites; the signed ZIP and styled DMG are
-  notarized and stapled.
-
-DMG SHA-256: aab2fff596f559cd00a2a1fb9f09c19bafac17c867df2cc4d45f50d974ca3d71
-
-ZIP SHA-256: f4dae16f6fcc1f8f9b6b4fd843669b365f83b595458ce6cd38e2d5d34192752d
-
-## What's new in 2.5.5
-
-- Reorganized caption, dictation, model, and transcript settings into clearer task-focused pages.
-- Improved model readiness and download-state reporting, with safer model inventory refresh and interrupted-download cleanup.
-- Added local caption timing diagnostics and protected vocabulary for names and technical terms.
-- Continued caption reliability work with bounded ASR processing, adaptive overload handling, language-aware merging, and stable bubble updates.
-- Verified 410 tests across 53 suites. The signed ZIP and styled drag-to-Applications DMG are notarized and stapled.
-
-DMG SHA-256: 80c13d4ff55e1f37243376a9ec3fee3eba387aff412ca8303d02f8e41060f2d5
-
-ZIP SHA-256: e6909ef78f49464852d6c3a6b79d0d24bdf2225fbb9e49fd3573f1e49ba19b53
-
-## What's new in 2.5.3
-
-- Adaptive speech activity detection closes live captions at natural pauses and
-  distinguishes healthy silence from a stalled capture stream.
-- Stable cumulative ASR reconciliation reduces duplicated or missing words
-  around pauses and recognizer revisions.
-- Bounded ASR processing, sample-clock timestamps, backlog diagnostics, and
-  generation-safe translation keep captions responsive during long sessions.
-- Script-aware joining preserves readable Latin spacing and spaceless scripts.
-
-## What's new in 2.5.0
-
-- Code-switching dictation can preserve German, English, Chinese, and other
-  spoken spans in one press-to-talk session.
-- Whisper and Nemotron reuse resident model weights while decoding regions
-  sequentially, reducing warm release-to-result latency.
-- Cleanup and translation validate mixed-language output instead of silently
-  normalising it to the first detected language.
-- Cancellation, model readiness, and release timing are surfaced more clearly
-  for a more predictable local workflow.
-
-## What's new in 2.5.1
-
-- Removed the duplicate top-right Advanced settings action from Dictation and Captions.
-- Polished the remaining native disclosure with a slider icon, compact semibold typography, improved spacing, and localized labels.
-- Verified 374 tests in 48 suites, plus Developer ID signing, Apple notarization, and the styled drag-to-Applications DMG.
-
-## What's new in 2.5.2
-
-- Clearing the caption bubble now starts a fresh visible display row while the
-  recognition session continues, so new speech appears without restarting
-  captions and late translations cannot repaint the cleared row.
-- Captions show their listening state before translator warm-up completes and
-  choose between already-installed ASR tiers using caption-specific latency
-  measurements; dictation keeps its own adaptive history.
-- Verified 380 tests in 49 suites, Apple notarization, and the styled
-  drag-to-Applications DMG.
-
-## If something needs the network
-
-Daily use does not. sAiity downloads the models you choose from their declared sources, then recognises and translates on-device. The signed app can check the opt-in Sparkle feed for updates. No account or API key is required.
+Part of [aiity](https://aiity.de) · [hAiity for iPhone](https://enrzh.github.io/hAiity/)
