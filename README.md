@@ -70,14 +70,17 @@ share busy-state ownership with retranslation and refuse changed input before
 publishing. They still use the installed Gemma cleanup model and can miss or
 invent details; spoken lines and SRT/WebVTT stay unchanged.
 
+Build 2 keeps setup and SelfCapture on the same opaque settings surface
+as Settings, so the native titlebar stays solid system chrome.
+
 [Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.6.6) ·
 [All releases](https://github.com/enrzh/sAiity/releases) ·
 [Signed Sparkle feed](https://enrzh.github.io/sAiity/appcast.xml)
 
 | Artifact | SHA-256 |
 | --- | --- |
-| DMG | `c3928bbe3092d18f69e0014192dca0d9a472335cf07a05bc84294e4e42dbb5f6` |
-| ZIP | `00db2d397d19156d3b84a2e8299f65e52ba64f166f7381944c6b97463f1cdcc6` |
+| DMG | `6077db29f7f8c5d1a22dc5e45c89d7671269cdbce869def211c8687fc865a546` |
+| ZIP | `cb738bb296bfafe0c81017740fff1192441c33d7459867f423ef3865d1f39fcc` |
 
 ## About this repository
 
