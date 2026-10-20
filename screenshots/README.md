@@ -5,6 +5,10 @@ disposable photography build with a separate bundle identifier and synthetic
 example captions/transcripts. The application source and shipped release were
 not modified. No audio was recorded and no model inference was run.
 
+These images predate the rename to Syllivra (2.7.0). The transcript window title
+in `summary.png` still reads "sAiity — Transcript"; refresh them from a
+Syllivra release build.
+
 | File | Native surface |
 | --- | --- |
 | `captions.png` | Captions settings |
