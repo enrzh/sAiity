@@ -1,11 +1,12 @@
-<p align="center"><img src="screenshots/icon.png" width="100" alt="sAiity app icon"></p>
+<p align="center"><img src="screenshots/icon.png" width="100" alt="Syllivra app icon"></p>
 
-<h1 align="center">sAiity</h1>
+<h1 align="center">Syllivra</h1>
+<p align="center"><em>Previously named sAiity.</em></p>
 <p align="center"><strong>Read what you hear. Keep what matters.</strong><br>Live captions, translation, dictation and transcripts. On your Mac.</p>
 <p align="center">
-  <a href="https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.dmg">Download for Mac</a> ·
+  <a href="https://github.com/enrzh/sAiity/releases/download/v2.7.0/Syllivra-2.7.0.dmg">Download for Mac</a> ·
   <a href="https://enrzh.github.io/sAiity/">Explore the app</a> ·
-  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.6.6">Release notes</a> ·
+  <a href="https://github.com/enrzh/sAiity/releases/tag/v2.7.0">Release notes</a> ·
   <a href="https://enrzh.github.io/sAiity/en/privacy.html">Privacy</a>
 </p>
 
@@ -39,8 +40,8 @@ synthetic caption and transcript text. See [image provenance](screenshots/README
 
 ## Install
 
-1. [Download the signed, notarized DMG](https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.dmg)
-   and move sAiity to Applications. [A ZIP is also available](https://github.com/enrzh/sAiity/releases/download/v2.6.6/sAiity-2.6.6.zip).
+1. [Download the signed, notarized DMG](https://github.com/enrzh/sAiity/releases/download/v2.7.0/Syllivra-2.7.0.dmg)
+   and move Syllivra to Applications. [A ZIP is also available](https://github.com/enrzh/sAiity/releases/download/v2.7.0/Syllivra-2.7.0.zip).
 2. Choose captions, dictation or both. Setup walks you through local model
    downloads and the permissions for your chosen features.
 3. For captions, macOS Screen Recording permission gates system audio. Dictation
@@ -62,25 +63,27 @@ only while you hold the shortcut. Sparkle update checks are opt-in.
 [English policy](https://enrzh.github.io/sAiity/en/privacy.html) ·
 [Datenschutzerklärung](https://enrzh.github.io/sAiity/privacy.html)
 
-## Current release: 2.6.6
+## Current release: 2.7.0
 
-The transcript reader is resizable and hosts **Summarize**, **Summarize Again**,
-and **Remove Summary**. Session rows keep one secondary-action menu. Summaries
-share busy-state ownership with retranslation and refuse changed input before
-publishing. They still use the installed Gemma cleanup model and can miss or
-invent details; spoken lines and SRT/WebVTT stay unchanged.
+sAiity is now **Syllivra**. The app keeps its bundle identifier, settings,
+downloaded models, transcripts, `saiity://` links and Sparkle feed, so existing
+installs update in place. Installing from the DMG? Quit sAiity, replace its app
+bundle with Syllivra and keep only one installed copy.
 
-Build 2 keeps setup and SelfCapture on the same opaque settings surface
-as Settings, so the native titlebar stays solid system chrome.
+Dictation works straight from the shortcut with redesigned settings and setup,
+and now pastes into browser and Electron text fields, including Chrome. It says
+when it heard near-silence, skips silent stretches and never opens the
+microphone for other modifier shortcuts. New local model options, faster
+capture, reused warm models and steadier language handling round it out.
 
-[Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.6.6) ·
+[Release notes and verification](https://github.com/enrzh/sAiity/releases/tag/v2.7.0) ·
 [All releases](https://github.com/enrzh/sAiity/releases) ·
 [Signed Sparkle feed](https://enrzh.github.io/sAiity/appcast.xml)
 
 | Artifact | SHA-256 |
 | --- | --- |
-| DMG | `6077db29f7f8c5d1a22dc5e45c89d7671269cdbce869def211c8687fc865a546` |
-| ZIP | `cb738bb296bfafe0c81017740fff1192441c33d7459867f423ef3865d1f39fcc` |
+| DMG | `71cbb32a91c055f3db8c419694ed68559bb5c6a30825d9cf582c4da9a0403cad` |
+| ZIP | `ae104c82c329c637472d02169b060b2d3da39688f582c0d76d27ec7274020483` |
 
 ## About this repository
 
