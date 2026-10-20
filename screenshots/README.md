@@ -1,13 +1,10 @@
 # Public screenshots
 
-Freshly captured October 7, 2026 from the tagged **v2.6.5** app source, in a
-disposable photography build with a separate bundle identifier and synthetic
-example captions/transcripts. The application source and shipped release were
-not modified. No audio was recorded and no model inference was run.
-
-These images predate the rename to Syllivra (2.7.0). The transcript window title
-in `summary.png` still reads "sAiity — Transcript"; refresh them from a
-Syllivra release build.
+Freshly captured October 20, 2026 from the **Syllivra 2.7.0** release source
+(tag `v2.7.0`, build 244), in a disposable photography build with a separate
+bundle identifier and synthetic example captions/transcripts. The application
+source and shipped release were not modified. No audio was recorded and no
+model inference was run.
 
 | File | Native surface |
 | --- | --- |
@@ -16,16 +13,19 @@ Syllivra release build.
 | `transcripts.png` | Example saved-session library |
 | `summary.png` | Example bilingual transcript and summary |
 | `bubble.png` | Actual caption bubble displaying synthetic bilingual text |
-| `icon.png` | Current app icon |
+| `icon.png` | Current app icon (unchanged since 2.6.5) |
 
 The app's existing `SAIITY_TEST_HOOKS` capture entry point was used in an isolated
-copy of the release source. For photography only, windows use a readable light
-appearance and a larger minimum height. ScreenCaptureKit photographs only that
-process's own windows, retaining the native controls and materials. Images use
-2× output dimensions; actual detail depends on the display's backing scale.
-A temporary session-directory override prevents access to the user's transcript
-library. The summary text is a fixture demonstrating the UI, not evidence of
-model accuracy. The bubble uses the app's solid background setting for contrast.
+copy of the release source, extended there only to hold one real window open with
+fixture content. Each window was then photographed by its window ID
+(`screencapture -o -l`), keeping the native titlebar, controls and materials and
+nothing else on screen. Settings windows use a readable light appearance at an
+860 × 702 pt frame; the caption bubble keeps the system appearance with the
+app's solid background setting for contrast. Images use 2× output dimensions.
+A temporary session-directory override keeps the five example sessions away from
+the user's transcript library. The summary text is a fixture demonstrating the
+UI, not evidence of model accuracy, and the summary sheet is shown as if a
+cleanup model were installed.
 
 For future refreshes, use the published release tag, a disposable app identity
 and a temporary library. Capture settled native windows, not reconstructed

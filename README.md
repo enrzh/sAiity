@@ -10,7 +10,7 @@
   <a href="https://enrzh.github.io/sAiity/en/privacy.html">Privacy</a>
 </p>
 
-<p align="center"><img src="screenshots/captions.png" width="860" alt="Fresh capture of the native Captions window, with recognition and translation controls"></p>
+<p align="center"><img src="screenshots/captions.png" width="860" alt="Fresh capture of the native Captions window, with speech model, update speed, translation and caption bubble controls"></p>
 <p align="center"><img src="screenshots/bubble.png" width="620" alt="A caption bubble with English example text and its German translation"></p>
 
 **macOS 26 or later · Apple Silicon · No account or API key.**
@@ -31,11 +31,11 @@
   the essentials without changing the original spoken lines.
 
 <p align="center">
-  <img src="screenshots/dictation.png" width="440" alt="Dictation settings with a shortcut, recognition profile and translation choices">
-  <img src="screenshots/summary.png" width="340" alt="An example transcript with a local recap, decisions and action items">
+  <img src="screenshots/dictation.png" width="420" alt="Dictation settings with the hold-to-talk shortcut, processing mode, translation and cleanup choices">
+  <img src="screenshots/summary.png" width="420" alt="An example transcript with a local recap, decisions and action items">
 </p>
 
-Freshly captured on **October 7, 2026**, from the **2.6.6 release UI** using
+Freshly captured on **October 20, 2026**, from the **2.7.0 release UI** using
 synthetic caption and transcript text. See [image provenance](screenshots/README.md).
 
 ## Install
