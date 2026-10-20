@@ -8,12 +8,12 @@ brand
 
 People on Apple Silicon Macs who want live captions, local translation, saved
 transcripts, or press-to-talk dictation without an account or cloud audio
-service. They arrive at this page to understand what sAiity does, verify the
+service. They arrive at this page to understand what Syllivra does, verify the
 privacy model, and install the current signed release.
 
 ## Product Purpose
 
-sAiity turns speech from the Mac into captions, translations, transcripts, and
+Syllivra turns speech from the Mac into captions, translations, transcripts, and
 dictation while keeping processing on the device. The public site succeeds when
 a visitor understands that promise quickly, sees the real product in use, and
 can download the current Mac release without hunting through repository files.
@@ -34,7 +34,7 @@ behind vague marketing copy.
 
 ## Design Principles
 
-- Show the product doing its job with real sAiity screenshots.
+- Show the product doing its job with real Syllivra screenshots.
 - Make the local-processing and microphone model easy to verify.
 - Put the download path first and keep supporting links obvious.
 - Use restraint as product confidence: every visual element must explain,
