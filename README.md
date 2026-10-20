@@ -1,7 +1,6 @@
 <p align="center"><img src="screenshots/icon.png" width="100" alt="Syllivra app icon"></p>
 
 <h1 align="center">Syllivra</h1>
-<p align="center"><em>Previously named sAiity.</em></p>
 <p align="center"><strong>Read what you hear. Keep what matters.</strong><br>Live captions, translation, dictation and transcripts. On your Mac.</p>
 <p align="center">
   <a href="https://github.com/enrzh/sAiity/releases/download/v2.7.0/Syllivra-2.7.0.dmg">Download for Mac</a> ·
@@ -65,10 +64,9 @@ only while you hold the shortcut. Sparkle update checks are opt-in.
 
 ## Current release: 2.7.0
 
-sAiity is now **Syllivra**. The app keeps its bundle identifier, settings,
-downloaded models, transcripts, `saiity://` links and Sparkle feed, so existing
-installs update in place. Installing from the DMG? Quit sAiity, replace its app
-bundle with Syllivra and keep only one installed copy.
+Existing installs update in place and keep their settings, downloaded models,
+transcripts and `saiity://` links. Installing from the DMG? Quit the older
+version, replace its app bundle with Syllivra and keep only one installed copy.
 
 Dictation works straight from the shortcut with redesigned settings and setup,
 and now pastes into browser and Electron text fields, including Chrome. It says
